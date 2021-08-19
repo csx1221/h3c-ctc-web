@@ -1,0 +1,65 @@
+{
+  "id": "1717987",
+  "name": "h3c_ctc",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "中移集中测试平台",
+  "glyphs": [
+    {
+      "icon_id": "562704",
+      "name": "Start",
+      "font_class": "start",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "649696",
+      "name": "人",
+      "font_class": "ren",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "1263354",
+      "name": "项目",
+      "font_class": "xiangmu",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "2344232",
+      "name": "调整阶段",
+      "font_class": "web-icon-",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "5269227",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "6537207",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "6900805",
+      "name": "members",
+      "font_class": "setmember",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "7171160",
+      "name": "项目管理",
+      "font_class": "project",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    }
+  ]
+}

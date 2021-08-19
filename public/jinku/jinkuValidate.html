@@ -1,0 +1,48 @@
+<html>
+<body>
+	<button class="btn btn-danger" onclick="javascript:closeParentIframe()" style="float:right;cursor: pointer;margin: 5px;">X</button>
+    <iframe   name="iframe1" width="100%" height="95%"> </iframe> 
+	<form  action=""   method="post"   target="iframe1" id="form"> 
+		<input type="hidden" name="subLoginName" id="subLoginName"/>
+		<!--<input type="hidden" name="mainLoginName" id="mainLoginName"/>-->
+		<input type="hidden" name="appCode" id="appCode"/>
+		<input type="hidden" name="operCode" id="operCode"/>
+		<input type="hidden" name="sessionId" id="sessionId"/>
+		<input type="hidden" name="serverIp" id="serverIp"/>
+		<input type="hidden" name="serverPort" id="serverPort"/>
+		<input type="hidden" name="checkSessionUrl" id="checkSessionUrl"/>
+		<input type="hidden" name="operContent" id="operContent"/>
+		<input type="hidden" name="svcNum" id="svcNum"/>
+	</form>
+</body>
+<script>
+	let params = JSON.parse(localStorage.getItem('jinKuValid') || '{}')
+	if(params && params.webUrl){
+		document.getElementById("form").action= params.webUrl || '';
+		document.getElementById("subLoginName").value= params.subLoginName || '';
+		// document.getElementById("mainLoginName").value = params.mainLoginName || '';
+		document.getElementById("appCode").value= params.appCode || '';
+		document.getElementById("operCode").value= params.operCode || '';
+		document.getElementById("sessionId").value= params.sessionId || '';
+		document.getElementById("serverIp").value= params.serverIp || '';
+		document.getElementById("serverPort").value= params.serverPort || '';
+		document.getElementById("checkSessionUrl").value= params.checkSessionUrl || '';
+		document.getElementById("operContent").value= params.operContent || '';
+		document.getElementById("svcNum").value= params.svcNum || '';
+		document.getElementById("form").submit();
+		function closeParentIframe() {
+			if(parent.document.getElementById('ctc-spin-spinning')){
+				parent.document.getElementById('ctc-spin-spinning').style.display = 'none'
+			}
+			if(parent.document.getElementById("jinkuIframe")){
+				if(!!window.ActiveXObject || "ActiveXObject" in window || (/Trident\/7\./).test(navigator.userAgent)){
+					parent.document.getElementById("jinkuIframe").removeNode(true)
+				}else{
+					parent.document.getElementById("jinkuIframe").remove()
+		　　    }
+			}
+			localStorage.setItem('jinkuSecretKey', '-999#')
+		}
+	}
+</script>
+</html>
