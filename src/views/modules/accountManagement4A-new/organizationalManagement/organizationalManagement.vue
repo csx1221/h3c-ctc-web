@@ -186,7 +186,7 @@ export default {
               id: '0',
               lv: 0,
               orgDesc: '',
-              orgName: '中国移动',
+              orgName: 'H3C',
               parentId: '0',
               children: thisvm.buildTreeDate(res.data.list, '0')
             }
@@ -198,7 +198,7 @@ export default {
               id: '0',
               lv: 0,
               orgDesc: '',
-              orgName: '中国移动',
+              orgName: 'H3C',
               parentId: '0',
               children: res.data.list
             }
@@ -281,17 +281,17 @@ export default {
       if (type === '0') {
         this.addOrUpdataVisible = true
         this.$nextTick(() => {
-          this.$refs.addOrUpdata.init('添加部门', type, row, '中国移动')
+          this.$refs.addOrUpdata.init('添加部门', type, row, 'H3C')
         })
       } else if (type === '1') {
         this.addOrUpdataVisible = true
         this.$nextTick(() => {
-          this.$refs.addOrUpdata.init('添加项目组', type, { parentId: row.id, lv: 2, managerList: [] }, '中国移动 > ' + row.orgName)
+          this.$refs.addOrUpdata.init('添加项目组', type, { parentId: row.id, lv: 2, managerList: [] }, 'H3C > ' + row.orgName)
         })
       } else if (type === '2') {
         this.addOrUpdataVisible = true
         this.$nextTick(() => {
-          this.$refs.addOrUpdata.init('编辑部门', type, row, '中国移动')
+          this.$refs.addOrUpdata.init('编辑部门', type, row, 'H3C')
         })
       } else if (type === '2-2') {
         this.addOrUpdataVisible = true
@@ -300,7 +300,7 @@ export default {
           return item.id === row.parentId
         })
         this.$nextTick(() => {
-          this.$refs.addOrUpdata.init('编辑项目组', type, row, '中国移动 > ' + newArr[0].orgName)
+          this.$refs.addOrUpdata.init('编辑项目组', type, row, 'H3C > ' + newArr[0].orgName)
         })
       } else if (type === '3') {
         this.addOrUpdataVisible = true

@@ -27,7 +27,8 @@ export default {
       poptree: [],
       data: [{
         id: 1,
-        label: '中国移动',
+        // label: '中国移动',
+        label: 'H3C',
         children: [{
           id: 2,
           label: '测试部门',

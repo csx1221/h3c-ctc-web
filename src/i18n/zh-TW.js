@@ -83,7 +83,8 @@ t.login.username = '用戶名'
 t.login.password = '密碼'
 t.login.captcha = '驗證碼'
 t.login.demo = '在線演示'
-t.login.copyright = '中国移动'
+t.login.copyright = 'H3C'
+// t.login.copyright = '中国移动'
 
 t.home = {}
 t.home.desc = {}

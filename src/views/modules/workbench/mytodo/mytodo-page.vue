@@ -62,7 +62,6 @@
         <el-row>
           <el-col :span="18" class="split-line" style="text-align:left;">
             待办列表<span style="color:#4190f7;padding-left:24px;">
-              说明：由于【缺陷待办】和其他类型待办工单字段不同，故单独展示
               <!-- 说明：由于【缺陷待办、问题/任务待办】和其他类型待办工单字段不同，故单独展示 -->
               </span>
           </el-col>

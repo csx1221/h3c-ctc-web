@@ -152,9 +152,9 @@ export default {
       this.$emit('input', dataForm)
       let name = ''
       if (this.dataForm.orgName) {
-        name = '中国移动/' + this.dataForm.parentName + '/' + this.dataForm.orgName
+        name = 'H3C/' + this.dataForm.parentName + '/' + this.dataForm.orgName
       } else {
-        name = '中国移动/' + this.dataForm.parentName
+        name = 'H3C/' + this.dataForm.parentName
       }
       this.showName = name
       this.visible = false

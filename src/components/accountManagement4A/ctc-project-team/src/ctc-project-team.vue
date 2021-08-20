@@ -56,7 +56,8 @@ export default {
                 id: '0',
                 lv: 0,
                 orgDesc: null,
-                orgName: '中国移动',
+                // orgName: '中国移动',
+                orgName: 'H3C',
                 parentId: null,
                 disabled: true
               })
@@ -92,7 +93,8 @@ export default {
                     id: '0',
                     lv: 0,
                     orgDesc: null,
-                    orgName: '中国移动',
+                    // orgName: '中国移动',
+                    orgName: 'H3C',
                     parentId: null,
                     disabled: true
                   })
@@ -125,7 +127,8 @@ export default {
                     id: '0',
                     lv: 0,
                     orgDesc: null,
-                    orgName: '中国移动',
+                    // orgName: '中国移动',
+                    orgName: 'H3C',
                     parentId: null,
                     disabled: true
                   })

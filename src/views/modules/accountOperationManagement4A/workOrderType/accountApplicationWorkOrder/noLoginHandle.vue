@@ -373,9 +373,9 @@ export default {
         if (data.isAddOrg === 1) {
           let orgName = ''
           if (data.toCreateOrganizeForm.orgName) {
-            orgName = '中国移动/' + data.toCreateOrganizeForm.parentName + '/' + data.toCreateOrganizeForm.orgName
+            orgName = 'H3C/' + data.toCreateOrganizeForm.parentName + '/' + data.toCreateOrganizeForm.orgName
           } else {
-            orgName = '中国移动/' + data.toCreateOrganizeForm.parentName
+            orgName = 'H3C/' + data.toCreateOrganizeForm.parentName
           }
           data.applyList[0].orgName = orgName
         }

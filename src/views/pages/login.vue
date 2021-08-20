@@ -1,12 +1,13 @@
 <template>
   <div class="aui-wrapper aui-page__login">
+    <div class="aui-wrapper-mask"></div>
     <div class="aui-content__wrapper">
       <main class="aui-content">
-        <div class="login-header">
+        <!-- <div class="login-header">
           <h2 class="login-brand">H3C云测试平台</h2>
-        </div>
+        </div> -->
         <div class="login-body">
-          <h3 class="login-title">欢迎使用H3C云测试平台用户登录</h3>
+          <h3 class="login-title">H3C云测试平台</h3>
           <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmitHandle()" status-icon>
             <!-- <el-form-item>
               <el-select v-model="$i18n.locale" class="w-percent-100">
@@ -54,14 +55,13 @@
         </div>
         <div class="login-footer">
           <!-- <p>{{ $t('login.copyright') }}2020 © </p> -->
-          <p>H3C云测试平台2021 © </p>
-          <p>【平台热线：13613116196/jzhcspt@139.com，服务时间：工作日9:00-18:00】</p>
+          <!-- <p>H3C云测试平台 </p> -->
         </div>
         <!--满天星特效-->
-        <div class="stars">
+        <!-- <div class="stars">
           <div class="star" v-for="n in 10" :key="n" :style="{'--star-color':colorData[n%5]}"></div>
-        </div>
-        <div class='starIcon' v-for="n in 10" :key="n" :style="getStartStyle(n)"></div>
+        </div> -->
+        <!-- <div class='starIcon' v-for="n in 10" :key="n" :style="getStartStyle(n)"></div> -->
       </main>
     </div>
     <add-or-updata v-if="addOrUpdataVisible" ref="addOrUpdata" @init="addOrUpdataVisible = false"></add-or-updata>
@@ -155,24 +155,37 @@ export default {
 .aui-page__login {
   background-color: #fff;
   // background: url('../../assets/img/login_bg.jpg') no-repeat center center;
-  background: url('../../assets/img/login2.jpg') no-repeat center center;
+  background: url('../../assets/img/login3.jpeg') no-repeat center center;
   background-size: cover;
+  position:relative;
+  .aui-wrapper-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(117, 115, 115, 0.6);
+  }
   .login-header {
     position: fixed;
-    top: 17%;
-    right: 13%;
+    top: 20%;
+    // right: 13%;
     text-shadow: 5px 5px 5px rgba(13, 63, 164, 0.5);
   }
   .login-body {
     position: fixed;
     /*top: 35%;*/
     top: 30%;
-    right: 10%;
+    // right: 10%;
     border-radius: 10px;
-    background-color: rgba(17, 5, 110, 0.5);
+    background-color: rgba(17, 5, 110, 0.6);
     color: #fff;
-    box-shadow: 11px 17px 3px 0px rgba(32, 101, 207, 0.44);
+    box-shadow: 11px 11px 3px 0px rgba(4, 7, 10, 0.44);
+    // box-shadow: 11px 17px 3px 0px rgba(32, 101, 207, 0.44);
     z-index: 10;
+    .login-title{
+      font-size: 26px;
+    }
   }
   .login-footer {
     position: fixed;
