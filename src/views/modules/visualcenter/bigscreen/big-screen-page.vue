@@ -2,7 +2,7 @@
   <el-container id="big-screen-area" class="big-screen-area" :style="autoClacHeight('all')">
     <el-header class="big-screen-header">
       <el-row>
-        <el-col :span="24" class="header-title" @click.native="handleFullScreen()">集中化测试平台可视化中心</el-col>
+        <el-col :span="24" class="header-title" @click.native="handleFullScreen()">云测试平台可视化中心</el-col>
         <el-col :span="24" class="header-date">{{currDateTime}}</el-col>
         <div class="go-back" @click="doGoback()"><img src="../../../../assets/img/svg/go_back.svg" style="width:16px;height:16px;color:red;" /> 返回首页</div>
       </el-row>
@@ -319,7 +319,7 @@ export default {
           if (!thisvm.fullscreen) {
             thisvm.$notify({
               title: '操作提示',
-              message: '点击【集中化测试平台可视化中心】标题，可进入全屏模式',
+              message: '点击【云测试平台可视化中心】标题，可进入全屏模式',
               type: 'info',
               duration: 6000
             })

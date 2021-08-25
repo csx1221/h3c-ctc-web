@@ -3,8 +3,8 @@ const t = {}
 t.loading = '加載中...'
 
 t.brand = {}
-t.brand.lg = '集中测试平台'
-t.brand.mini = '集测'
+t.brand.lg = '云测试平台'
+t.brand.mini = '云测'
 
 t.add = '新增'
 t.addDevelopment = '創建開發需求'
@@ -90,7 +90,7 @@ t.home = {}
 t.home.desc = {}
 t.home.desc.title = '項目介紹'
 t.home.desc.list = [
-  '集中测试平台，是基於Spring Cloud打造的微服務平台，為企業提供一站式测试解決方案',
+  '云测试平台，是基於Spring Cloud打造的微服務平台，為企業提供一站式测试解決方案',
   '基於最新的Spring Cloud Alibaba 2.1、Nacos、Spring Cloud Gateway、Spring Boot 2.1、Mybatis、Element 2.0+開發'
 ]
 

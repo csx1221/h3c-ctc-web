@@ -3,8 +3,8 @@
     <el-row>
       <div class="isTips">
 <!--        <span>备注说明:</span>-->
-<!--        <span>1、是否已有主账号为"否"时，申请4A主账号及集中化测试平台从账号</span>-->
-<!--        <span>2、是否已有主账号为"是"时，申请集中化测试平台从账号；</span>-->
+<!--        <span>1、是否已有主账号为"否"时，申请4A主账号及云测试平台从账号</span>-->
+<!--        <span>2、是否已有主账号为"是"时，申请云测试平台从账号；</span>-->
       </div>
       <el-divider content-position="left"><span style="color:#26c6da;font-size:15px;">申请信息(带*为必填项)</span></el-divider>
       <el-form :model="dataForm" :rules="dataRule" ref="dataForm" label-width="180px">

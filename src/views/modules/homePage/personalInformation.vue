@@ -31,7 +31,7 @@ export default {
     return {
       name: this.$store.state.user.realName,
       position: this.$store.state.user.subName,
-      loginSw: Cookies.get('loginSw'), // 判断登录方式(0:集中化测试平台门户登录;1:4A登录)
+      loginSw: Cookies.get('loginSw'), // 判断登录方式(0:云测试平台门户登录;1:4A登录)
       list: [
         {
           icon: 'icon-setting',

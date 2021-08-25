@@ -3,7 +3,7 @@
     <div class="aui-content__wrapper">
       <main class="aui-content">
         <div class="login-header">
-          <h2 class="login-brand">集中化测试平台</h2>
+          <h2 class="login-brand">云测试平台</h2>
         </div>
         <div class="login-body">
           <h3 class="login-title">请使用4A平台用户登录</h3>

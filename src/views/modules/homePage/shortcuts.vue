@@ -49,7 +49,7 @@ export default {
   data () {
     return {
       addOrUpdateVisible: false, // 新增／更新，弹窗visible状态
-      loginSw: Cookies.get('loginSw'), // 判断登录方式(0:集中化测试平台门户登录;1:4A登录)
+      loginSw: Cookies.get('loginSw'), // 判断登录方式(0:云测试平台门户登录;1:4A登录)
       list: [
         { title: '创建项目', includes: ['0', '1'], type: 'click', clickType: '1', icon: cjxm },
         { title: '工单管理', includes: ['0', '1'], type: 'path', path: 'workbench-workorder-mgr-workordermgr-page', icon: gdgl },
@@ -69,7 +69,7 @@ export default {
     roleType: String
   },
   mounted () {
-    // 判断登录方式(0:集中化测试平台门户登录;1:4A登录)
+    // 判断登录方式(0:云测试平台门户登录;1:4A登录)
     if (this.loginSw === '1') {
       this.list = this.list.filter((item) => {
         return !['创建账户'].includes(item.title)

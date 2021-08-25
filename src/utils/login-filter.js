@@ -7,7 +7,7 @@ export default {
     // 登录页面，默认先触发地址拦截判断
     triggerUrlFilter () {
       let thisvm = this
-      // 判断登录方式(0:集中化测试平台门户登录;1:4A登录)
+      // 判断登录方式(0:云测试平台门户登录;1:4A登录)
       this.$http.get('/auth/getLoginConfig', { 'params': { 'random': Math.random() } }).then(({ data: res }) => {
         // 获取路由参数
         let isClearUrl = thisvm.$route.params.isClearUrl || '1'

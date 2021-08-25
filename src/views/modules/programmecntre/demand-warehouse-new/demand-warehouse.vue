@@ -170,7 +170,7 @@ export default {
       }],
       dataList: [],
       refDemand: false,
-      loginSw: Cookies.get('loginSw'), // 判断登录方式(0:集中化测试平台门户登录;1:4A登录)
+      loginSw: Cookies.get('loginSw'), // 判断登录方式(0:云测试平台门户登录;1:4A登录)
       audit4ASw: Cookies.get('audit4ASw') // 判断审核方式(0:显示邮箱、号码;1:不显示邮箱、号码)
     }
   },
@@ -210,7 +210,7 @@ export default {
           this.$message.error(res.msg)
         } else {
           // this.titleDataList = res.data.head
-          // 判断登录方式(0:集中化测试平台门户登录;1:4A登录)
+          // 判断登录方式(0:云测试平台门户登录;1:4A登录)
           if (this.audit4ASw === '1') {
             this.titleDataList = this.titleDataList.filter((item) => {
               return !['contactPhone'].includes(item.code)

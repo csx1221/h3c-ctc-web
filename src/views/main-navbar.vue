@@ -3,11 +3,11 @@
     <div class="aui-navbar__header">
       <h1 class="aui-navbar__brand" @click="$router.push({ name: 'home' })" style="background:#4190f7;">
         <a class="aui-navbar__brand-lg" style="color: #fff" href="javascript:;">
-          <!-- <img src="../../public/logo.png" style="width:30px;height:30px;margin-right:5px;" title="欢迎访问集中化测试平台" /> -->
+          <!-- <img src="../../public/logo.png" style="width:30px;height:30px;margin-right:5px;" title="欢迎访问云测试平台" /> -->
          CTP {{ $t('brand.lg') }}
         </a>
         <a class="aui-navbar__brand-mini" style="color:#fff" href="javascript:;">
-          <img src="../../public/logo.png" style="width:30px;height:30px;" title="欢迎访问集中化测试平台" />
+          <img src="../../public/logo.png" style="width:30px;height:30px;" title="欢迎访问云测试平台" />
         </a>
       </h1>
     </div>

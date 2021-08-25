@@ -15,8 +15,8 @@
                                 <el-card shadow="never" class="aui-card--fill">
                                     <div class="isTips">
                                         <span>温馨提示:</span>
-                                        <span>1、4A主从账号申请：同时申请4A主账号和集中化测试平台从账号</span>
-                                        <span>2、集测从账号申请：已有4A平台主账号，申请集中化测试平台的从账号</span>
+                                        <span>1、4A主从账号申请：同时申请4A主账号和云测试平台从账号</span>
+                                        <span>2、集测从账号申请：已有4A平台主账号，申请云测试平台的从账号</span>
                                     </div>
                                     <el-form :model="dataForm.applyList" :rules="dataRules" ref="dataForm_child" label-width="180px">
                                         <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">

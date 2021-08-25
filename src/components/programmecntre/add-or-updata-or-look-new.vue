@@ -173,7 +173,7 @@ export default {
         } else if (type === 'update') {
           this.title = '编辑'
           this.list.unshift({ name: '需求编号', code: 'demandCode', span: 12, type: 'input', edit: false })
-          // 判断登录方式(0:集中化测试平台门户登录;1:4A登录)
+          // 判断登录方式(0:云测试平台门户登录;1:4A登录)
           if (this.audit4ASw === '1') {
             this.list = this.list.filter((item) => {
               return !['contactPhone'].includes(item.code)

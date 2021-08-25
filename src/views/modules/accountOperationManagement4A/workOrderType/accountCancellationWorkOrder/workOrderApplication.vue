@@ -15,7 +15,7 @@
                                 <el-card shadow="never" class="aui-card--fill">
                                     <div class="isTips">
                                         <span>温馨提示:</span>
-                                        <span>1、集中化测试平台的从账号可与4A主账号一起注销，其余平台从账号需在对应的所属平台进行注销；</span>
+                                        <span>1、云测试平台的从账号可与4A主账号一起注销，其余平台从账号需在对应的所属平台进行注销；</span>
                                         <span>2、注销的账号作为测试项目的非项目经理角色名下有未处理工单，可直接注销。未处理的工单自动转给工单所在测试项目的项目经理名下；</span>
                                         <span>3、注销的账号作为测试项目的项目经理角色，需先变更测试项目的项目经理后方可注销账号。</span>
                                     </div>
@@ -406,7 +406,7 @@ export default {
         let jzhList = []
         let jzhListNo = []
         for (let i = 0; i < subData.length; i++) {
-          if (subData[i].appName !== '集中化测试平台') {
+          if (subData[i].appName !== '云测试平台') {
             jzhListNo.push(subData[i])
           } else {
             jzhList.push(subData[i])
@@ -434,7 +434,7 @@ export default {
           }
         })
       } else if (state === 2) {
-        let title = `${loginName} 的集中化测试平台从账号【${subLoginName}】未注销，确定将4A主账号与集中化测试平台从账号一起注销吗？`
+        let title = `${loginName} 的云测试平台从账号【${subLoginName}】未注销，确定将4A主账号与云测试平台从账号一起注销吗？`
         thisvm.$confirm(title, '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',

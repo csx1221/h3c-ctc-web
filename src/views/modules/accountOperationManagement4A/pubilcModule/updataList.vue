@@ -5,8 +5,8 @@
         <!--      {{dataForms}}-->
 <!--        <div class="isTips">-->
 <!--          <span>温馨提示:</span>-->
-<!--          <span>1、4A主从账号申请：同时申请4A主账号和集中化测试平台从账号</span>-->
-<!--          <span>2、集测从账号申请：已有4A平台主账号，申请集中化测试平台的从账号</span>-->
+<!--          <span>1、4A主从账号申请：同时申请4A主账号和云测试平台从账号</span>-->
+<!--          <span>2、集测从账号申请：已有4A平台主账号，申请云测试平台的从账号</span>-->
 <!--        </div>-->
         <!--      {{dataForm}}-->
         <el-form :model="dataForm" :rules="dataRule" ref="dataForm" label-width="180px">
