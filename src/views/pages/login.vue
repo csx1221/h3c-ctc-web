@@ -49,7 +49,7 @@
               </el-row>
             </el-form-item>
             <el-form-item>
-              <el-button type="primary" @click="dataFormSubmitHandle()" class="w-percent-100">{{ $t('login.title') }}</el-button>
+              <el-button type="primary" @click="dataFormSubmitHandle()" class="w-percent-100 primaryBtn">{{ $t('login.title') }}</el-button>
             </el-form-item>
           </el-form>
         </div>
@@ -175,12 +175,14 @@ export default {
   .login-body {
     position: fixed;
     /*top: 35%;*/
-    top: 30%;
+    top: 25%;
     // right: 10%;
     border-radius: 10px;
-    background-color: rgba(17, 5, 110, 0.6);
+    // background-color: rgba(17, 5, 110, 0.6);
+    background-color: rgba(23, 21, 27, 0.65);
     color: #fff;
-    box-shadow: 11px 11px 3px 0px rgba(4, 7, 10, 0.44);
+    box-shadow: 8px 8px 3px 0px rgba(77, 84, 91, 0.44);
+    // box-shadow: 11px 11px 3px 0px rgba(4, 7, 10, 0.44);
     // box-shadow: 11px 17px 3px 0px rgba(32, 101, 207, 0.44);
     z-index: 10;
     .login-title{
@@ -191,6 +193,10 @@ export default {
     position: fixed;
     width: 80%;
     bottom: 7%;
+  }
+  .primaryBtn{
+    background-color: #17B3A3;
+    border-color: #17B3A3;
   }
   /*动态星星特效*/
   .starIcon {
